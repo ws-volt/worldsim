@@ -19,7 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="entity.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="playstate.cpp" />
+    <ClCompile Include="state.cpp" />
+    <ClCompile Include="statestack.cpp" />
+    <ClCompile Include="unit.cpp" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="playstate.h" />
+    <ClInclude Include="state.h" />
+    <ClInclude Include="statestack.h" />
+    <ClInclude Include="unit.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{acb55ec5-68a7-43ad-a2b3-404e55b6a6bb}</ProjectGuid>
