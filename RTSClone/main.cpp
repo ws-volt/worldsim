@@ -15,6 +15,8 @@ int main()
 				window.close();
 		}
 
+		printf("hello");
+
 		window.clear();
 		window.draw(shape);
 		window.display();
