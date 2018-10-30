@@ -8,6 +8,7 @@ public:
 	Unit();
 
 	void update(sf::Time dt);
+	void changeColor();
 
 private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;

@@ -1,7 +1,8 @@
 #include "unit.h";
 #include<SFML\Graphics.hpp>
 
-Unit::Unit() {
+Unit::Unit(){
+	setVelocity(10.f, 10.f);
 	unitShape.setSize(sf::Vector2f(5, 5));
 	unitShape.setPosition(50, 50);
 }
@@ -13,4 +14,8 @@ void Unit::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 
 void Unit::update(sf::Time dt) {
 	Entity::update(dt);
+}
+
+void Unit::changeColor() {
+	unitShape.setFillColor(sf::Color(31, 226, 85, 255));
 }

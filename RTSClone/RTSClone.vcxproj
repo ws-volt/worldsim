@@ -23,6 +23,7 @@
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="playstate.cpp" />
+    <ClCompile Include="selector.cpp" />
     <ClCompile Include="state.cpp" />
     <ClCompile Include="statestack.cpp" />
     <ClCompile Include="unit.cpp" />
@@ -32,6 +33,7 @@
     <ClInclude Include="application.h" />
     <ClInclude Include="entity.h" />
     <ClInclude Include="playstate.h" />
+    <ClInclude Include="selector.h" />
     <ClInclude Include="state.h" />
     <ClInclude Include="statestack.h" />
     <ClInclude Include="unit.h" />

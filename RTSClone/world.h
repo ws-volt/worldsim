@@ -2,6 +2,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "unit.h"
+#include "selector.h"
 
 class World {
 public:
@@ -14,5 +15,7 @@ public:
 private:
 	sf::RenderWindow& window;
 	Unit testUnit;
+	Selector selector;
 	bool isGameOver;
+	bool isSelecting;
 };

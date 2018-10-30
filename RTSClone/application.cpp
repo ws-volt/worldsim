@@ -3,7 +3,7 @@
 
 const sf::Time Application::frameTime = sf::seconds(1.f / 144.f);
 
-Application::Application() : window(sf::VideoMode(1024, 700), "blank", sf::Style::Close), stateStack(window) {
+Application::Application() : window(sf::VideoMode(1500, 920), "blank", sf::Style::Close), stateStack(window) {
 
 }
 
@@ -18,12 +18,10 @@ void Application::run() {
 		while (timeElapsed >= frameTime) {
 
 			sf::Event event;
-			while (window.pollEvent(event))
-			{
+			while (window.pollEvent(event)) {	
 				stateStack.handleEvent(event);
 
-				switch (event.type)
-				{
+				switch (event.type) {
 				case sf::Event::Closed:
 					window.close();
 				}
