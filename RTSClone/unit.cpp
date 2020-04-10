@@ -2,7 +2,7 @@
 #include<SFML\Graphics.hpp>
 
 Unit::Unit(){
-	setVelocity(10.f, 10.f);
+	//setVelocity(10.f, 10.f);
 	unitShape.setSize(sf::Vector2f(5, 5));
 	unitShape.setPosition(50, 50);
 }
@@ -13,9 +13,20 @@ void Unit::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 }
 
 void Unit::update(sf::Time dt) {
+	if (isSelected()) {
+		unitShape.setOutlineThickness(2);
+		unitShape.setOutlineColor(sf::Color(101, 153, 237, 200));
+	}
+	else {
+		unitShape.setOutlineThickness(0);
+	}
 	Entity::update(dt);
 }
 
 void Unit::changeColor() {
 	unitShape.setFillColor(sf::Color(31, 226, 85, 255));
+}
+
+sf::FloatRect Unit::getHitBox() const {
+	return getTransform().transformRect(unitShape.getGlobalBounds());
 }

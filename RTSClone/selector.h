@@ -14,6 +14,7 @@ public:
 	void deactivate();
 	bool isSelectorActive();
 	void setStartPos(float x, float y);
+	sf::FloatRect getSelectorBox() const;
 
 private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;

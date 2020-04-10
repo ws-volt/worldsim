@@ -11,6 +11,7 @@ public:
 	void Draw();
 	void HandleEvent(const sf::Event& event);
 	bool isGameComplete();
+	void handleSelectorCollisions();
 
 private:
 	sf::RenderWindow& window;
@@ -18,4 +19,6 @@ private:
 	Selector selector;
 	bool isGameOver;
 	bool isSelecting;
+	std::vector<std::reference_wrapper<Entity>> selectedEntities;
+	std::vector<std::reference_wrapper<Unit>> units;
 };

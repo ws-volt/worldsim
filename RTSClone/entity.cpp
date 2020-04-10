@@ -25,3 +25,15 @@ void Entity::setVelocity(float x, float y) {
 void Entity::update(sf::Time dt) {
 	move(velocity * dt.asSeconds());
 }
+
+bool Entity::isSelected() {
+	return selected;
+}
+
+void Entity::select() {
+	selected = true;
+}
+
+void Entity::deselect() {
+	selected = false;
+}

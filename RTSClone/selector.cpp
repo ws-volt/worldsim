@@ -39,3 +39,8 @@ void Selector::setStartPos(float x, float y) {
 	startX = x;
 	startY = y;
 }
+
+sf::FloatRect Selector::getSelectorBox() const {
+	return getTransform().transformRect(selectorShape.getGlobalBounds());
+}
+
