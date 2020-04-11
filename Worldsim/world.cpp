@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-World::World(sf::RenderWindow& window) : window(window), testUnit(), selector(), selectedEntities(), units() {
+World::World(sf::RenderWindow& window) : window(window), selector(), selectedEntities(), units() {
 	//Unit u1 = Unit();
 	//u1.setPosition(250, 250);
 	//Unit u2 = Unit();
@@ -18,7 +18,6 @@ World::World(sf::RenderWindow& window) : window(window), testUnit(), selector(),
 	//Unit u6 = Unit();
 	//u1.setPosition(250, 100);
 
-	units.push_back(testUnit);
 	/*units.push_back(u1);
 	units.push_back(u2);
 	units.push_back(u3);
@@ -28,7 +27,6 @@ World::World(sf::RenderWindow& window) : window(window), testUnit(), selector(),
 }
 
 void World::Update(sf::Time dt) {
-	//handleSelectorCollisions();
 	testUnit.update(dt);
 }
 
@@ -43,22 +41,14 @@ void World::HandleEvent(const sf::Event& event) {
 	switch (event.type) {
 	case sf::Event::MouseButtonPressed:
 		if (event.mouseButton.button == sf::Mouse::Left) {
-			selector.activate();
-			selector.setPosition(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y);
-			selector.setStartPos(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y);
 			break;
 		}
 	case sf::Event::MouseButtonReleased:
 		if (event.mouseButton.button == sf::Mouse::Left) {
-			handleSelectorCollisions();
-			selector.deactivate();
 			break;
 		}
 	case sf::Event::MouseMoved:
-		if (selector.isSelectorActive()) {
-			selector.setSize(sf::Mouse::getPosition(window));
-			break;
-		}
+		break;
 	}
 }
 

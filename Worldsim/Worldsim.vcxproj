@@ -22,20 +22,24 @@
     <ClCompile Include="application.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="playstate.cpp" />
     <ClCompile Include="selector.cpp" />
     <ClCompile Include="state.cpp" />
     <ClCompile Include="statestack.cpp" />
+    <ClCompile Include="Tile.cpp" />
     <ClCompile Include="unit.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="playstate.h" />
     <ClInclude Include="selector.h" />
     <ClInclude Include="state.h" />
     <ClInclude Include="statestack.h" />
+    <ClInclude Include="Tile.h" />
     <ClInclude Include="unit.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>

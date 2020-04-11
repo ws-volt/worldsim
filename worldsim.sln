@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSClone", "RTSClone\RTSClone.vcxproj", "{ACB55EC5-68A7-43AD-A2B3-404E55B6A6BB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "worldsim", "Worldsim\Worldsim.vcxproj", "{ACB55EC5-68A7-43AD-A2B3-404E55B6A6BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

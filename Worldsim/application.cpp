@@ -3,7 +3,7 @@
 
 const sf::Time Application::frameTime = sf::seconds(1.f / 144.f);
 
-Application::Application() : window(sf::VideoMode(1500, 920), "blank", sf::Style::Close), stateStack(window) {
+Application::Application() : window(sf::VideoMode(1800, 1000), "World Simulator Pre Alpha", sf::Style::Close), stateStack(window) {
 
 }
 

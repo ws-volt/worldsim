@@ -2,6 +2,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "unit.h"
+#include "Map.h"
 #include "selector.h"
 
 class World {
@@ -17,6 +18,7 @@ private:
 	sf::RenderWindow& window;
 	Unit testUnit;
 	Selector selector;
+	Map worldMap;
 	bool isGameOver;
 	bool isSelecting;
 	std::vector<std::reference_wrapper<Entity>> selectedEntities;
