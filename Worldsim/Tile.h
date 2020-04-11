@@ -1,12 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-class Tile : public sf::Drawable, public sf::Transformable, public sf::RectangleShape {
+class Tile : public sf::RectangleShape {
 public:
-	Tile();
+	Tile(int size, float xPos, float yPos);
 
 private:
 	int size;
-	void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
 };

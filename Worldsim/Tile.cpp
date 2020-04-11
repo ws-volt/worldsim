@@ -1,6 +1,6 @@
 #include "Tile.h";
 
-Tile::Tile() {};
-
-void Tile::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-}
+Tile::Tile(int size, float xPos, float yPos) {
+	setSize(sf::Vector2f(size, size));
+	setPosition(xPos, yPos);
+};

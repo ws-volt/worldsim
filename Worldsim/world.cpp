@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-World::World(sf::RenderWindow& window) : window(window), selector(), selectedEntities(), units() {
+World::World(sf::RenderWindow& window) : window(window), selector(), selectedEntities(), units(), worldMap() {
 	//Unit u1 = Unit();
 	//u1.setPosition(250, 250);
 	//Unit u2 = Unit();
@@ -34,6 +34,7 @@ void World::Draw() {
 	for (Unit unit : units) {
 		window.draw(unit);
 	}
+	window.draw(worldMap);
 	window.draw(selector);
 }
 
