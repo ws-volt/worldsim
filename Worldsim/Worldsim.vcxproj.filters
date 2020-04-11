@@ -19,6 +19,9 @@
     <Filter Include="Header Files\Terrain">
       <UniqueIdentifier>{11b8d991-95ce-4e40-8c0a-8dc0503f7d25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Deluanator">
+      <UniqueIdentifier>{3c97f9ef-5d50-44c8-91ba-9fcbc0a47299}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="Tile.h">
       <Filter>Header Files\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Deluanator.hpp">
+      <Filter>Header Files\Deluanator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

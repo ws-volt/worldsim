@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="Deluanator.hpp" />
     <ClInclude Include="entity.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="playstate.h" />

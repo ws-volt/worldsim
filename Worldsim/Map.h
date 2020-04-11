@@ -10,5 +10,10 @@ public:
 private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 	std::vector<Tile> mapTiles;
+	void generateWorld();
 
+
+	std::vector<Tile> generateLandmass(int numSides);
+
+	std::vector<Tile> lineBetweenTwoPoints(double x1, double y1, double x2, double y2);
 };

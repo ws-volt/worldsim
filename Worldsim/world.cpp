@@ -18,6 +18,9 @@ World::World(sf::RenderWindow& window) : window(window), selector(), selectedEnt
 	//Unit u6 = Unit();
 	//u1.setPosition(250, 100);
 
+
+	sf::IntRect test = window.getViewport(window.getView());
+	int a = 2;
 	/*units.push_back(u1);
 	units.push_back(u2);
 	units.push_back(u3);
